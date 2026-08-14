@@ -4,9 +4,7 @@ A handheld, rechargeable brush for cleaning chalk off climbing holds. A small mo
 
 Designed to be cheap, easy to assemble, and fully 3D printable apart from a short list of off-the-shelf parts. Everything here is free to use, modify, and remix.
 
-> **[FILL IN: hero photo of the finished brush]**
->
-> **[FILL IN: short video/GIF of it running — this is the single most persuasive thing you can add]**
+![The finished brush](images/hero.jpg)
 
 ---
 
@@ -48,8 +46,6 @@ One design decision worth explaining: the motor mount sits *between* the bottom 
 
 Press and hold the button to run the motor. Release to stop. Charge over USB-C.
 
-**[FILL IN: photo of all printed parts laid out separately — this communicates the whole design at a glance]**
-
 ---
 
 ## How it works
@@ -71,12 +67,12 @@ More detail in [Design notes](#design-notes).
 | Part | Qty | Notes | Link |
 |---|---|---|---|
 | Coreless motor, 8520 (8.5 × 20 mm), 3.7 V | 1 | 1 mm shaft. Sold as micro-drone spares, usually in pairs. | **[FILL IN]** |
-| Propeller / impeller | 1 | **[FILL IN: exact prop you used — diameter and bore]** | **[FILL IN]** |
-| 1S LiPo battery, 3.7 V | 1 | **[FILL IN: exact size/capacity, e.g. 103450 2000 mAh]**. Must physically fit the base. | **[FILL IN]** |
+| Propeller / impeller | 1 | **[FILL IN: diameter and shaft bore]** | **[FILL IN]** |
+| 1S LiPo battery, 3.7 V | 1 | **[FILL IN: size and capacity]**. Must physically fit the bottom section. | **[FILL IN]** |
 | TP4056 USB-C charging module **with protection** | 1 | Get the 3-chip version (TP4056 + DW01A + FS8205). The 2-chip version has no battery protection. | **[FILL IN]** |
 | Momentary pushbutton, 12 mm | 1 | Rated 3 A or better. Panel-mounts through the printed hole. | **[FILL IN]** |
-| Series resistor | 1 | **[FILL IN: the value that worked for you — 1 Ω / 2 Ω / etc.]** See [Troubleshooting](#troubleshooting) for why this is here. | **[FILL IN]** |
-| Wooden brush head | 1 | **[FILL IN: which brush, and exactly how you modified it — this is important, since the head is modeled around it]** | **[FILL IN]** |
+| Series resistor | 1 | **[FILL IN: value]**. See [Troubleshooting](#troubleshooting) for why this is here. | **[FILL IN]** |
+| Wooden brush head | 1 | **[FILL IN: which brush, and how you modified it — important, since the head is modeled around it]** | **[FILL IN]** |
 | Silicone wire, 22–24 AWG | — | Short lengths, red and black. | **[FILL IN]** |
 | Heat shrink tubing | — | Assorted small sizes. | — |
 
@@ -96,27 +92,25 @@ The design is not fussy about brands, but a few things do matter:
 
 ## Printed parts
 
-Seven files, six required and one optional. They're numbered in assembly order.
+Seven files, six required and one optional. Numbered in assembly order.
 
 | # | File | Qty | Description |
 |---|---|---|---|
-| 1 | `01_bottom.stl` | 1 | Battery compartment, USB-C port opening, button hole, integrated carabiner clip |
-| 2 | `02_usb_board_spacer.stl` | 1 | Sits between the bottom and the motor mount. Braces the charging board from behind so plugging in a USB cable can't push it out of position — this removes the need to glue the board in. |
-| 3 | `03_motor_mount.stl` | 1 | Holds the motor. Sits between the bottom and middle sections, with a pass-through for the motor wires to route down into the bottom. |
-| 4 | `04_middle_hilt.stl` | 1 | Impeller chamber and air intakes |
-| 5 | `05_head.stl` | 1 | Air channel, exit nozzle, and brush mount |
-| 6 | `06_switch_clip.stl` | 1 | Retains the button and prevents accidental activation in a bag or on a harness. **[FILL IN: describe exactly how it works — does it lock the button, shroud it, or hold it captive?]** |
-| 7 | `07_carabiner_clip.stl` | 0–1 | **Optional.** A standalone replacement for the carabiner clip that's already built into the bottom section. If that clip ever snaps off, glue this one on instead of reprinting the whole bottom. |
+| 1 | `01-bottom.stl` | 1 | Battery compartment, USB-C port opening, button hole, integrated carabiner clip |
+| 2 | `02-usb-board-spacer.stl` | 1 | Sits between the bottom and the motor mount. Braces the charging board from behind so plugging in a USB cable can't push it out of position — this removes the need to glue the board in. |
+| 3 | `03-motor-mount.stl` | 1 | Holds the motor. Sits between the bottom and middle sections, with a pass-through for the motor wires to route down into the bottom. |
+| 4 | `04-middle-hilt.stl` | 1 | Impeller chamber and air intakes |
+| 5 | `05-head.stl` | 1 | Air channel, exit nozzle, and brush mount |
+| 6 | `06-switch-clip.stl` | 1 | Retains the button and prevents accidental activation in a bag or on a harness. **[FILL IN: describe how it works]** |
+| 7 | `07-carabiner-clip.stl` | 0–1 | **Optional.** Standalone replacement for the carabiner clip already built into the bottom section. If that clip snaps off, glue this one on instead of reprinting the whole bottom. |
 
-**[FILL IN: confirm final filenames once you upload them — if you rename them, update this table to match]**
-
-**[FILL IN: if you print a propeller rather than buying one, add the file and a note here]**
+![All printed parts](images/parts-laid-out.png)
 
 ---
 
 ## Print settings
 
-These are what I used. They're a starting point, not gospel — your printer may want different numbers.
+These are what I used. A starting point, not gospel — your printer may want different numbers.
 
 | Setting | Value |
 |---|---|
@@ -125,7 +119,7 @@ These are what I used. They're a starting point, not gospel — your printer may
 | Walls / perimeters | **[FILL IN]** |
 | Infill | **[FILL IN]** |
 | Supports | Yes — see below |
-| Print orientation | **[FILL IN: describe orientation for each of the 7 parts]** |
+| Print orientation | **[FILL IN: orientation for each part]** |
 
 ### Notes on printing threads
 
@@ -135,29 +129,31 @@ They're designed with **0.4 mm radial clearance** between the male and female pa
 
 Trapezoidal threads were chosen over sharp V-threads specifically because they print reliably on FDM: the flat crests and roots don't need fine resolution to come out clean, and they self-align when screwing together.
 
+![Printed threads](images/threads-detail.jpg)
+
 ---
 
 ## Support placement
 
-Support placement matters on these parts. Here's where I placed mine:
+Where I placed supports:
 
-> **[FILL IN: slicer screenshot — `01_bottom.stl`]**
->
-> **[FILL IN: slicer screenshot — `02_usb_board_spacer.stl` (or note "no supports needed")]**
->
-> **[FILL IN: slicer screenshot — `03_motor_mount.stl`]**
->
-> **[FILL IN: slicer screenshot — `04_middle_hilt.stl`]**
->
-> **[FILL IN: slicer screenshot — `05_head.stl`]**
->
-> **[FILL IN: slicer screenshot — `06_switch_clip.stl` (or note "no supports needed")]**
->
-> **[FILL IN: slicer screenshot — `07_carabiner_clip.stl` (or note "no supports needed")]**
+**Bottom**
 
-**[FILL IN: notes on what failed without supports, and any areas to deliberately *avoid* supporting — for example, supports inside the air channel or on the threads can hurt more than they help]**
+![Support placement — bottom](images/supports-bottom-1.png)
 
-Not every part needs supports. For any part that prints fine without them, just say so — that saves people time and material.
+**Motor mount**
+
+![Support placement — motor mount](images/supports-motor-mount-1.png)
+
+![Support placement — motor mount, second view](images/supports-motor-mount-2.png)
+
+**Remaining parts**
+
+![Support placement — remaining parts](images/supports-all-1.png)
+
+![Support placement — remaining parts, second view](images/supports-all-2.png)
+
+**[FILL IN: which parts need no supports at all, and any areas to deliberately *avoid* supporting — supports inside the air channel or on the threads can hurt more than they help]**
 
 ---
 
@@ -167,21 +163,19 @@ Not every part needs supports. For any part that prints fine without them, just 
 
 Before adding electronics, screw the bottom, middle, and head sections together and confirm the threads engage smoothly. Clean up any stringing or elephant's foot on the thread starts. If sections bind, chase the threads by screwing them together and apart a few times — printed threads usually loosen up after a few cycles.
 
-Also dry-fit the spacer and motor mount in the stack to confirm they seat flat and the wire pass-through lines up.
+Also dry-fit the spacer and motor mount to confirm they seat flat and the wire pass-through lines up.
 
-### 2. Mount the motor to the motor mount
+### 2. Mount the motor
 
-Press the motor into its pocket in `03_motor_mount.stl`. It should be a snug fit; a dab of CA glue will hold it if your print runs loose.
+Press the motor into its pocket in `03-motor-mount.stl`. It should be a snug fit; a dab of CA glue will hold it if your print runs loose.
 
-Feed the motor leads **down** through the wire pass-through, so they come out on the bottom side of the mount. This is the whole point of this part — every electrical connection ends up in the bottom section, so nothing needs connectors.
+Feed the motor leads **down** through the wire pass-through so they come out on the bottom side of the mount. This is the whole point of this part — every electrical connection ends up in the bottom section, so nothing needs connectors.
 
-**[FILL IN: note the wire length that works well — long enough to reach the button and board comfortably, short enough not to bunch up]**
+**[FILL IN: wire length that works well]**
 
 ### 3. Wire the electronics
 
-The circuit is simple: the battery connects to the charging board, and the motor is switched off the board's protected output.
-
-Wiring order:
+![Wiring diagram](images/wiring-diagram.png)
 
 1. Solder the **series resistor** inline on the motor's positive lead. Insulate it with heat shrink.
 2. Solder the **button** inline on that same positive lead, between the board's `OUT+` and the resistor.
@@ -190,46 +184,42 @@ Wiring order:
 
 > **Wire the battery last, and tape the battery leads while you work.** A 1S LiPo can deliver a very high short-circuit current. Double-check polarity against the board silkscreen before connecting — some cheap batteries ship with reversed connector pinouts.
 
-Test the circuit now, before anything goes into the housing. Press the button and confirm the motor spins. It is much easier to fix a bad joint on the bench than inside a tube.
-
-![Wiring diagram](images/wiring-diagram.png)
-
-**[OPTIONAL: photo of your completed wiring harness laid out flat, before it goes in the tube — nice to have alongside the diagram, but the diagram covers the essentials]**
+Test the circuit before anything goes into the housing. It is much easier to fix a bad joint on the bench than inside a tube.
 
 ### 4. Install the button and switch clip
 
 Push the button through the hole in the bottom section and secure it with its included nut.
 
-Fit `06_switch_clip.stl` to retain it. **[FILL IN: exactly how the clip installs and how it prevents accidental activation]**
+Fit `06-switch-clip.stl` to retain it. **[FILL IN: how the clip installs and how it prevents accidental activation]**
 
 ### 5. Fit the charging board, spacer, and battery
 
 Seat the TP4056 board so the USB-C port lines up with the opening in the bottom section.
 
-Fit `02_usb_board_spacer.stl` behind the board. The spacer takes the insertion force from the USB cable, so the board stays put without glue. Check the fit by plugging a cable in and confirming the board doesn't shift.
+Fit `02-usb-board-spacer.stl` behind the board. The spacer takes the insertion force from the USB cable, so the board stays put without glue. Check by plugging a cable in and confirming the board doesn't shift.
 
-Tuck the battery into the bottom compartment. **[FILL IN: anything that holds it in place — foam, tape, a printed feature?]**
+Tuck the battery into the bottom compartment. **[FILL IN: anything that holds it in place]**
 
 ### 6. Stack the assembly
+
+![Assembly stack](images/assembly-stack.jpg)
 
 Working from the bottom up:
 
 1. **Bottom** — battery, board, spacer, button, switch clip, and all soldered connections
-2. **Motor mount** — motor installed, wires already routed down into the bottom
+2. **Motor mount** — motor installed, wires routed down into the bottom
 3. **Middle (hilt)** — screws onto the bottom, capturing the motor mount in the stack
 4. **Head** — screws onto the middle
 
-**[FILL IN: confirm this order matches your build, and note anything about how the motor mount is captured or aligned]**
-
 ### 7. Fit the impeller
 
-Press the propeller onto the motor shaft. **[FILL IN: which direction it faces, and how to get it at the right height]**
+Press the propeller onto the motor shaft. **[FILL IN: which direction it faces and how to set its height]**
 
 Spin it by hand and confirm it turns freely without touching the chamber walls.
 
 ### 8. Attach the brush head
 
-**[FILL IN: exactly how the wooden brush attaches to the head piece — press fit, glue, screw? And how you modified the brush to fit]**
+**[FILL IN: how the wooden brush attaches — press fit, glue, screw? And how you modified it to fit]**
 
 ### 9. Final test
 
@@ -237,9 +227,13 @@ Assemble fully, press the button, and confirm the motor spins up and air comes o
 
 ### Optional: spare carabiner clip
 
-`07_carabiner_clip.stl` is only needed if the clip built into the bottom section breaks. If that happens, remove what's left of the original and glue this one on — no need to reprint the entire bottom section.
+![Carabiner clip](images/carabiner-clip.jpg)
 
-**[FILL IN: where exactly it glues on, and what adhesive you'd recommend]**
+`07-carabiner-clip.stl` is only needed if the clip built into the bottom section breaks. If that happens, remove what's left of the original and glue this one on — no need to reprint the entire bottom section.
+
+**[FILL IN: where it glues on and what adhesive to use]**
+
+---
 
 ## Using it
 
@@ -254,29 +248,29 @@ Runtime is effectively unlimited for normal use — at burst usage you'll go wee
 
 ## Design notes
 
-This section is for anyone wanting to understand *why* it's built this way, or planning to modify it. It's also an honest record of what didn't work.
+For anyone wanting to understand *why* it's built this way, or planning to modify it. Also an honest record of what didn't work.
 
 ### The airflow problem
 
-The core difficulty in a device like this is that **an axial fan (a propeller) produces high flow but very little pressure.** A small coreless motor spinning a propeller might produce on the order of 50–150 Pa. Forcing air through a narrow nozzle at high velocity needs several hundred Pa or more.
+The core difficulty is that **an axial fan (a propeller) produces high flow but very little pressure.** A small coreless motor spinning a propeller might produce on the order of 50–150 Pa. Forcing air through a narrow nozzle at high velocity needs several hundred Pa or more.
 
-When you connect a low-pressure fan to a high-resistance nozzle, the fan stalls: it can't push air forward, so air recirculates around the blade tips and escapes back out the intake. The device gets loud and does nothing. This is exactly what the first several revisions of this brush did.
+When you connect a low-pressure fan to a high-resistance nozzle, the fan stalls: it can't push air forward, so air recirculates around the blade tips and escapes back out the intake. The device gets loud and does nothing. This is exactly what the first several revisions did.
 
-Things that helped, roughly in order of impact:
+What helped, roughly in order of impact:
 
 1. **A larger exit opening.** By far the biggest factor. Small nozzles feel intuitively right (fast jet!) but are the direct cause of stall with this class of fan.
-2. **A smooth, gradual taper into the exit.** An abrupt contraction causes large pressure losses. A gentle cone recovers a lot of that.
-3. **Rounded rather than sharp-edged openings.** A sharp-edged hole causes the flow to separate at the edge, which effectively shrinks the working area below the hole's physical area.
+2. **A smooth, gradual taper into the exit.** An abrupt contraction causes large pressure losses; a gentle cone recovers a lot of that.
+3. **Rounded rather than sharp-edged openings.** A sharp edge makes the flow separate, which shrinks the working area below the hole's physical area.
 4. **Tight impeller tip clearance.** Air leaking over the blade tips from the high-pressure side back to the low-pressure side directly reduces achievable pressure. Aim for roughly 0.3–0.5 mm total.
-5. **Keeping the intake generous.** Restricting the intake to "balance" it against the exit is counterproductive — it just adds restriction to the side that wasn't the problem.
+5. **Keeping the intake generous.** Restricting the intake to "balance" it against the exit is counterproductive — it adds restriction to the side that wasn't the problem.
 
 ### What I tried that didn't work
 
-- **A 5015 centrifugal blower.** Centrifugal blowers make far more static pressure than axial fans and would be the technically correct choice for a narrow, high-velocity nozzle. But most 5015 units sold are 12 V or 24 V, and a 12 V blower on a 3.7 V cell barely turns. Running one properly would need a boost converter, which adds complexity this design was trying to avoid. **If you want to remix this toward a centrifugal design, get a genuinely 5 V-rated blower and verify the rating before you model a housing around it.**
-- **Stator vanes.** Straightening vanes downstream of the propeller should recover swirl energy as pressure, and they do work in principle — but they're sensitive to angle and spacing, and my attempts didn't produce a measurable improvement. Opening up the flow path was far more effective for far less effort.
-- **A capacitor for inrush suppression.** See below.
+- **A 5015 centrifugal blower.** Centrifugal blowers make far more static pressure than axial fans and would be the technically correct choice for a narrow, high-velocity nozzle. But most 5015 units sold are 12 V or 24 V, and a 12 V blower on a 3.7 V cell barely turns. Running one properly would need a boost converter, which adds complexity this design was trying to avoid. **If you want to remix toward a centrifugal design, get a genuinely 5 V-rated blower and verify the rating before modeling a housing around it.**
+- **Stator vanes.** Straightening vanes downstream of the propeller should recover swirl energy as pressure, and they work in principle — but they're sensitive to angle and spacing, and my attempts didn't produce a measurable improvement. Opening up the flow path was far more effective for far less effort.
+- **A capacitor for inrush suppression.** See [Troubleshooting](#troubleshooting).
 
-**[FILL IN: your notes on the jet-deflection fix — whether you added a straight barrel section after the taper, a flow straightener, or symmetrized the taper, and what the result was]**
+**[FILL IN: notes on the jet-deflection fix — straight barrel after the taper, flow straightener, symmetrized taper, and what the result was]**
 
 ### Thread design
 
@@ -284,7 +278,7 @@ Threads are trapezoidal, swept along a helix as real geometry:
 
 | Joint | Major diameter | Pitch | Depth | Clearance |
 |---|---|---|---|---|
-| Base ↔ Middle | 35 mm | 3 mm | 1.5 mm | 0.4 mm radial |
+| Bottom ↔ Middle | 35 mm | 3 mm | 1.5 mm | 0.4 mm radial |
 | Middle ↔ Head | 30 mm | 3 mm | 1.5 mm | 0.4 mm radial |
 
 Both use right-handed threads with about 3 turns of engagement, plus a 1 mm chamfer at each thread start so the sections are easy to begin threading.
@@ -297,11 +291,11 @@ Threads deliberately stop short of the end of each section rather than running a
 
 ### The motor blips on for an instant and stops
 
-This is the protection circuit tripping on inrush current. A motor starting from a standstill briefly draws far more current than it does while running, and the protection chip reads that surge as a short circuit and latches the output off.
+The protection circuit is tripping on inrush current. A motor starting from a standstill briefly draws far more current than it does while running, and the protection chip reads that surge as a short circuit and latches the output off.
 
-The fix in this build is a **small series resistor** on the motor's positive lead, which limits the startup surge enough to stay under the protection threshold. It costs a small amount of motor speed (roughly 10–20%) — not enough to matter for blowing chalk.
+The fix here is a **small series resistor** on the motor's positive lead, limiting the startup surge enough to stay under the protection threshold. It costs a little motor speed (roughly 10–20%) — not enough to matter for blowing chalk.
 
-A large capacitor across the motor is the more elegant fix in theory, but it only works if the capacitor sits *directly* at the motor terminals. With any meaningful wire length in between, the wiring's inductance lets the fast edge of the surge through before the capacitor can respond. In this build the capacitor location wasn't practical, so the resistor is the better real-world answer.
+A large capacitor across the motor is the more elegant fix in theory, but it only works if the capacitor sits *directly* at the motor terminals. With any meaningful wire length in between, the wiring's inductance lets the fast edge of the surge through before the capacitor can respond. In this build that location wasn't practical, so the resistor is the better real-world answer.
 
 ### Air comes out of the intake holes instead of the nozzle
 
@@ -309,11 +303,11 @@ The fan is stalling against too much restriction. See [Design notes](#design-not
 
 ### The sections won't thread together
 
-Printed thread clearance is too tight for your printer. Try running the threads together a few times to wear them in, clean up any stringing on the thread starts, or reprint from the source CAD with more clearance.
+Printed thread clearance is too tight for your printer. Run the threads together a few times to wear them in, clean up stringing on the thread starts, or reprint from the source CAD with more clearance.
 
 ### The motor doesn't spin at all
 
-Check battery polarity at the board, confirm the battery has charge, and confirm you have the protected (3-chip) version of the charging board wired with the motor on `OUT+`/`OUT−` rather than directly on the battery pads.
+Check battery polarity at the board, confirm the battery has charge, and confirm you have the protected (3-chip) board with the motor wired to `OUT+`/`OUT−` rather than directly to the battery pads.
 
 ---
 
@@ -321,7 +315,7 @@ Check battery polarity at the board, confirm the battery has charge, and confirm
 
 **[FILL IN: public Onshape document link]**
 
-The full parametric CAD is shared publicly, not just the STLs. If you want to change a dimension — battery size, brush mount, nozzle diameter, thread clearance — editing the source model is far easier than trying to modify a mesh.
+The full parametric CAD is shared publicly, not just the STLs. If you want to change a dimension — battery size, brush mount, nozzle diameter, thread clearance — editing the source model is far easier than modifying a mesh.
 
 To use it: open the link, then **Make a copy** into your own Onshape account (a free hobbyist account works). From there everything is editable.
 
@@ -329,7 +323,7 @@ Modifications that would be genuinely useful:
 
 - A version sized around a different battery or brush head
 - A centrifugal version using a verified 5 V blower
-- A version with a captive nut or heat-set inserts instead of printed threads
+- A version with heat-set inserts instead of printed threads
 - A nozzle variant tuned for a different balance of flow versus velocity
 
 If you build one or improve it, I'd love to see it.
@@ -353,12 +347,12 @@ This design is shared as-is with no warranty. You're responsible for building an
 
 ## License
 
-**[FILL IN: choose one — see note below]**
+**[FILL IN: choose one]**
 
-Suggested: this work is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). You may share and adapt it, including commercially, provided you give credit and license your derivatives under the same terms.
+Suggested: this work is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). You may share and adapt it, including commercially, provided you give credit and license derivatives under the same terms.
 
 ---
 
 ## Acknowledgements
 
-**[FILL IN: the brush manufacturer, any prop/impeller designs you used or adapted, and anyone who helped or tested it. If you used someone else's model in any form, credit them here and confirm their license permits it.]**
+**[FILL IN: brush manufacturer, any prop/impeller design you used or adapted, and anyone who helped or tested it. If you used someone else's model, credit them here and confirm their license permits it.]**
