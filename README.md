@@ -116,7 +116,7 @@ These are what I used. A starting point, not gospel — your printer may want di
 | Material | PLA or Nylon (recommended, but PLA is plenty strong) |
 | Layer height | 0.2mm |
 | Walls / perimeters | 3 |
-| Infill | any |
+| Infill | any (10-15% is fine) |
 | Supports | Yes — see below |
 | Print orientation | see images |
 
@@ -212,7 +212,7 @@ BE CAREFUL NOT TO SQUISH THE WIRES WHEN SCREWING THE BOTTOM INTO THE MIDDLE!!!!!
 Working from the bottom up:
 
 1. **Bottom** — battery, board, spacer, button, switch clip, and all soldered connections
-2. **Motor mount** — motor installed, wires routed down into the bottom
+2. **Motor mount** — motor installed, wires routed down into the bottom, motor mount hugs the battery and sits on the walls around the battery
 3. **Middle (hilt)** — screws onto the bottom, capturing the motor mount in the stack
 4. **Head** — screws onto the middle
 
@@ -224,7 +224,7 @@ Spin it by hand and confirm it turns freely without touching the chamber walls.
 
 ### 8. Attach the brush head
 
-Once the brush head is cut and will fit, just bend the top of the head slightly (careful not to break it off) and slide the brush into the head.
+Once the brush head is cut and fits, just bend the top of the head slightly (careful not to break it off) and slide the brush into the head.
 
 ### 9. Final test
 
