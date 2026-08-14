@@ -351,9 +351,8 @@ This design is shared as-is with no warranty. You're responsible for building an
 
 ## License
 
-**[FILL IN: choose one]**
+This work is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). You may share and adapt it, including commercially, provided you give credit and license derivatives under the same terms.
 
-Suggested: this work is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). You may share and adapt it, including commercially, provided you give credit and license derivatives under the same terms.
 
 ---
 
