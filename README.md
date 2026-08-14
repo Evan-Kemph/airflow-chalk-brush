@@ -66,17 +66,16 @@ More detail in [Design notes](#design-notes).
 
 | Part | Qty | Notes | Link |
 |---|---|---|---|
-| Coreless motor, 8520 (8.5 × 20 mm), 3.7 V | 1 | 1 mm shaft. Sold as micro-drone spares, usually in pairs. | **[FILL IN]** |
-| Propeller / impeller | 1 | **[FILL IN: diameter and shaft bore]** | **[FILL IN]** |
-| 1S LiPo battery, 3.7 V | 1 | **[FILL IN: size and capacity]**. Must physically fit the bottom section. | **[FILL IN]** |
-| TP4056 USB-C charging module **with protection** | 1 | Get the 3-chip version (TP4056 + DW01A + FS8205). The 2-chip version has no battery protection. | **[FILL IN]** |
-| Momentary pushbutton, 12 mm | 1 | Rated 3 A or better. Panel-mounts through the printed hole. | **[FILL IN]** |
-| Series resistor | 1 | **[FILL IN: value]**. See [Troubleshooting](#troubleshooting) for why this is here. | **[FILL IN]** |
-| Wooden brush head | 1 | **[FILL IN: which brush, and how you modified it — important, since the head is modeled around it]** | **[FILL IN]** |
-| Silicone wire, 22–24 AWG | — | Short lengths, red and black. | **[FILL IN]** |
+| Coreless motor, 8520 (8.5 × 20 mm), 3.7 V | 1 | 1 mm shaft. Sold as micro-drone spares, usually in pairs. | https://www.amazon.com/dp/B07CPT5TSL?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1 |
+| 1S LiPo battery, 3.7 V | 1 | **[FILL IN: size and capacity]**. Must physically fit the bottom section. | https://www.amazon.com/dp/B091YKTT9S?ref=ppx_yo2ov_dt_b_fed_asin_title |
+| TP4056 USB-C charging module **with protection** | 1 | Get the 3-chip version (TP4056 + DW01A + FS8205). The 2-chip version has no battery protection. | https://www.amazon.com/dp/B07PKND8KG?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_3 |
+| Momentary pushbutton, 12 mm | 1 | Rated 3 A or better. Panel-mounts through the printed hole. | amazon.com/dp/B07RTZVZ6L?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_4 |
+| Series resistor | 1 | ~1 ohm. See [Troubleshooting](#troubleshooting) for why this is here. | any |
+| Wooden brush head | 1 | Cut flat 20mm below the bottom bristles and make an indent (see photos) | https://www.amazon.com/dp/B08XKM8LL2?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_2 |
+| Silicone wire, 22–24 AWG | — | Short lengths, red and black. | https://www.amazon.com/dp/B07TX6BX47?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1 |
 | Heat shrink tubing | — | Assorted small sizes. | — |
 
-**Approximate total cost: [FILL IN]**
+**Approximate total cost: cheaper than buying the stupid overpriced one I saw on Instagram**
 
 Most items come in multi-packs, so the per-unit cost is lower if you build more than one.
 
@@ -96,13 +95,13 @@ Seven files, six required and one optional. Numbered in assembly order.
 
 | # | File | Qty | Description |
 |---|---|---|---|
-| 1 | `01-bottom.stl` | 1 | Battery compartment, USB-C port opening, button hole, integrated carabiner clip |
-| 2 | `02-usb-board-spacer.stl` | 1 | Sits between the bottom and the motor mount. Braces the charging board from behind so plugging in a USB cable can't push it out of position — this removes the need to glue the board in. |
-| 3 | `03-motor-mount.stl` | 1 | Holds the motor. Sits between the bottom and middle sections, with a pass-through for the motor wires to route down into the bottom. |
-| 4 | `04-middle-hilt.stl` | 1 | Impeller chamber and air intakes |
-| 5 | `05-head.stl` | 1 | Air channel, exit nozzle, and brush mount |
-| 6 | `06-switch-clip.stl` | 1 | Retains the button and prevents accidental activation in a bag or on a harness. **[FILL IN: describe how it works]** |
-| 7 | `07-carabiner-clip.stl` | 0–1 | **Optional.** Standalone replacement for the carabiner clip already built into the bottom section. If that clip snaps off, glue this one on instead of reprinting the whole bottom. |
+| 1 | `bottom.stl` | 1 | Battery compartment, USB-C port opening, button hole, integrated carabiner clip |
+| 2 | `usb-board-spacer.stl` | 1 | Sits between the bottom and the motor mount. Braces the charging board from behind so plugging in a USB cable can't push it out of position — this removes the need to glue the board in. |
+| 3 | `motor-mount.stl` | 1 | Holds the motor. Sits between the bottom and middle sections, with a pass-through for the motor wires to route down into the bottom. |
+| 4 | `middle-hilt.stl` | 1 | Impeller chamber and air intakes |
+| 5 | `head.stl` | 1 | Air channel, exit nozzle, and brush mount |
+| 6 | `switch-clip.stl` | 1 | Retains the button and prevents accidental activation in a bag or on a harness. **[FILL IN: describe how it works]** |
+| 7 | `carabiner-clip.stl` | 0–1 | **Optional.** Standalone replacement for the carabiner clip already built into the bottom section. If that clip snaps off, glue this one on instead of reprinting the whole bottom. |
 
 ![All printed parts](images/parts-laid-out.png)
 
@@ -114,12 +113,12 @@ These are what I used. A starting point, not gospel — your printer may want di
 
 | Setting | Value |
 |---|---|
-| Material | **[FILL IN: PLA / PETG / etc.]** |
-| Layer height | **[FILL IN]** |
-| Walls / perimeters | **[FILL IN]** |
-| Infill | **[FILL IN]** |
+| Material | PLA or Nylon (recommended, but PLA is plenty strong) |
+| Layer height | 0.2mm |
+| Walls / perimeters | 3 |
+| Infill | any |
 | Supports | Yes — see below |
-| Print orientation | **[FILL IN: orientation for each part]** |
+| Print orientation | see images |
 
 ### Notes on printing threads
 
