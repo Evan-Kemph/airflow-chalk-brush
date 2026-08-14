@@ -67,7 +67,7 @@ More detail in [Design notes](#design-notes).
 | Part | Qty | Notes | Link |
 |---|---|---|---|
 | Coreless motor, 8520 (8.5 × 20 mm), 3.7 V | 1 | 1 mm shaft. Sold as micro-drone spares, usually in pairs. | https://www.amazon.com/dp/B07CPT5TSL?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1 |
-| 1S LiPo battery, 3.7 V | 1 | **[FILL IN: size and capacity]**. Must physically fit the bottom section. | https://www.amazon.com/dp/B091YKTT9S?ref=ppx_yo2ov_dt_b_fed_asin_title |
+| 1S LiPo battery, 3.7 V | 1 | 2100mAh. Must physically fit the bottom section. | https://www.amazon.com/dp/B091YKTT9S?ref=ppx_yo2ov_dt_b_fed_asin_title |
 | TP4056 USB-C charging module **with protection** | 1 | Get the 3-chip version (TP4056 + DW01A + FS8205). The 2-chip version has no battery protection. | https://www.amazon.com/dp/B07PKND8KG?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_3 |
 | Momentary pushbutton, 12 mm | 1 | Rated 3 A or better. Panel-mounts through the printed hole. | amazon.com/dp/B07RTZVZ6L?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_4 |
 | Series resistor | 1 | ~1 ohm. See [Troubleshooting](#troubleshooting) for why this is here. | any |
@@ -100,7 +100,7 @@ Seven files, six required and one optional. Numbered in assembly order.
 | 3 | `motor-mount.stl` | 1 | Holds the motor. Sits between the bottom and middle sections, with a pass-through for the motor wires to route down into the bottom. |
 | 4 | `middle-hilt.stl` | 1 | Impeller chamber and air intakes |
 | 5 | `head.stl` | 1 | Air channel, exit nozzle, and brush mount |
-| 6 | `switch-clip.stl` | 1 | Retains the button and prevents accidental activation in a bag or on a harness. **[FILL IN: describe how it works]** |
+| 6 | `switch-clip.stl` | 1 | Retains the button and prevents accidental activation in a bag or on a harness. hold in the switch so it does not fall out of its housing |
 | 7 | `carabiner-clip.stl` | 0–1 | **Optional.** Standalone replacement for the carabiner clip already built into the bottom section. If that clip snaps off, glue this one on instead of reprinting the whole bottom. |
 
 ![All printed parts](images/parts-laid-out.png)
@@ -140,11 +140,12 @@ Where I placed supports:
 
 ![Support placement — bottom](images/supports-bottom-1.png)
 
+![Support placement — motor mount, second view](images/supports-motor-mount-2.png)
+
 **Motor mount**
 
 ![Support placement — motor mount](images/supports-motor-mount-1.png)
 
-![Support placement — motor mount, second view](images/supports-motor-mount-2.png)
 
 **Remaining parts**
 
@@ -152,7 +153,10 @@ Where I placed supports:
 
 ![Support placement — remaining parts, second view](images/supports-all-2.png)
 
-**[FILL IN: which parts need no supports at all, and any areas to deliberately *avoid* supporting — supports inside the air channel or on the threads can hurt more than they help]**
+ALL supports work best as tree/organic supports
+Avoid putting supports on: middle, switch clip, usb board spacer, clip.
+Auto supports: head, fan
+Custom Supports: bottom, motor mount
 
 ---
 
@@ -189,7 +193,7 @@ Test the circuit before anything goes into the housing. It is much easier to fix
 
 Push the button through the hole in the bottom section and secure it with its included nut.
 
-Fit `06-switch-clip.stl` to retain it. **[FILL IN: how the clip installs and how it prevents accidental activation]**
+Fit `06-switch-clip.stl` to retain it. The switch clip just fits over the switch in the bottom once the switch is installed to prevent it from slipping out of its housing. The switch keeps the device from activating in your gym bag on accident. 
 
 ### 5. Fit the charging board, spacer, and battery
 
@@ -197,9 +201,11 @@ Seat the TP4056 board so the USB-C port lines up with the opening in the bottom 
 
 Fit `02-usb-board-spacer.stl` behind the board. The spacer takes the insertion force from the USB cable, so the board stays put without glue. Check by plugging a cable in and confirming the board doesn't shift.
 
-Tuck the battery into the bottom compartment. **[FILL IN: anything that holds it in place]**
+Tuck the battery into the bottom compartment. 
 
 ### 6. Stack the assembly
+
+BE CAREFUL NOT TO SQUISH THE WIRES WHEN SCREWING THE BOTTOM INTO THE MIDDLE!!!!!!
 
 ![Assembly stack](images/assembly-stack.jpg)
 
@@ -212,13 +218,13 @@ Working from the bottom up:
 
 ### 7. Fit the impeller
 
-Press the propeller onto the motor shaft. **[FILL IN: which direction it faces and how to set its height]**
+Press the propeller onto the motor shaft. The more open side of the propeller (fan) should be facing upward, see the images, but its the same orientation as on the build plate)
 
 Spin it by hand and confirm it turns freely without touching the chamber walls.
 
 ### 8. Attach the brush head
 
-**[FILL IN: how the wooden brush attaches — press fit, glue, screw? And how you modified it to fit]**
+Once the brush head is cut and will fit, just bend the top of the head slightly (careful not to break it off) and slide the brush into the head.
 
 ### 9. Final test
 
@@ -230,13 +236,12 @@ Assemble fully, press the button, and confirm the motor spins up and air comes o
 
 `07-carabiner-clip.stl` is only needed if the clip built into the bottom section breaks. If that happens, remove what's left of the original and glue this one on — no need to reprint the entire bottom section.
 
-**[FILL IN: where it glues on and what adhesive to use]**
-
+Use any CA glue (and activator for best application) to glue in the carabiner clip to the bottom of the assembly.
 ---
 
 ## Using it
 
-- Hold the button to run the motor. Use short bursts — a few seconds is plenty for a hold.
+- Hold the button to run the motor. Use short bursts or an extended press while brushing the hold or after brushing to loosen the chalk — a few seconds is plenty for a hold.
 - Brush the hold as normal; the airflow clears the chalk you loosen.
 - Charge over USB-C. The charging board's LED indicates charge state (typically red charging, blue/green full).
 - **Don't run the motor while charging.** The board detects a full charge by sensing current draw, and a load on the output confuses that detection, so it may never terminate the charge properly.
@@ -269,7 +274,7 @@ What helped, roughly in order of impact:
 - **Stator vanes.** Straightening vanes downstream of the propeller should recover swirl energy as pressure, and they work in principle — but they're sensitive to angle and spacing, and my attempts didn't produce a measurable improvement. Opening up the flow path was far more effective for far less effort.
 - **A capacitor for inrush suppression.** See [Troubleshooting](#troubleshooting).
 
-**[FILL IN: notes on the jet-deflection fix — straight barrel after the taper, flow straightener, symmetrized taper, and what the result was]**
+The jet deflection issue was essentially that the air was swirling inside the head before exiting, causing it to exit at a non-optimal angle. The fins inside force the air to come out straight.
 
 ### Thread design
 
