@@ -70,6 +70,7 @@ More detail in [Design notes](#design-notes).
 | 1S LiPo battery, 3.7 V | 1 | 2100mAh. Must physically fit the bottom section. | https://www.amazon.com/dp/B091YKTT9S?ref=ppx_yo2ov_dt_b_fed_asin_title |
 | TP4056 USB-C charging module **with protection** | 1 | Get the 3-chip version (TP4056 + DW01A + FS8205). The 2-chip version has no battery protection. | https://www.amazon.com/dp/B07PKND8KG?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_3 |
 | Momentary pushbutton, 12 mm | 1 | Rated 3 A or better. Panel-mounts through the printed hole. | amazon.com/dp/B07RTZVZ6L?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_4 |
+|switch|1|switch to turn on and off circuit, as to prevent it from turning on in a gym bag|https://www.amazon.com/dp/B09R43HCY3?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_4&th=1|
 | Series resistor | 1 | ~1 ohm. See [Troubleshooting](#troubleshooting) for why this is here. | any |
 | Wooden brush head | 1 | Cut flat 20mm below the bottom bristles and make an indent (see photos) | https://www.amazon.com/dp/B08XKM8LL2?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_2 |
 | Silicone wire, 22–24 AWG | — | Short lengths, red and black. | https://www.amazon.com/dp/B07TX6BX47?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1 |
